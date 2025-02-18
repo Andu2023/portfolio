@@ -215,7 +215,28 @@
           color: "pink-text-gradient",
         },
       ],
-      image: "images/scrumpoker.png",
+      image: "images/dmu_22.png",
+      source_code_link: "https://github.com/yshashi",
+    },
+    {
+      name: "Scrum Poker",
+      description:
+        "Make your agile estimation with collaborative Scrum Poker tool. Make team planning sessions more efficient and engaging!",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "images/dmu_21.png",
       source_code_link: "https://github.com/yshashi",
     },
   ];

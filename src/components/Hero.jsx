@@ -17,7 +17,7 @@ const Hero = () => {
           building scalable, efficient, and user-friendly applications<br />
           using a range of technologies.
           </p>
-          <div className="  flex  items-center m-5   " ><span className='border-1 border-white rounded cursor-pointer text-white bg-[#915eff]'>My Resume</span></div>
+          <div className="  flex  items-center m-5   " ><span className=' rounded cursor-pointer text-white bg-[#915eff] h-10 w-40 p-2'>Download Resume</span></div>
         </div>
       </div>
     </section>
