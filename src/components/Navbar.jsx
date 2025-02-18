@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  {  useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
 import { menu, close } from '../assets';
@@ -20,11 +20,8 @@ const Navbar = () => {
           }}
         >
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            AnduA &nbsp;
-            {/* <span className='sm:block hidden'> | Portfolio</span> */}
-          </p>
+            AnduA </p>
         </Link>
-
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li

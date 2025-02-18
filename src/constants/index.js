@@ -174,7 +174,7 @@
         },
       ],
       image: "images/aicontentgenerator.png",
-      source_code_link: "https://github.com/yshashi",
+      // source_code_link: "https://github.com/yshashi",
     },
     {
       name: "Social Media Resizer",
@@ -195,7 +195,7 @@
         },
       ],
       image: "images/socialmediaresizer.png",
-      source_code_link: "https://github.com/yshashi",
+      // source_code_link: "https://github.com/yshashi",
     },
     {
       name: "Scrum Poker",
@@ -216,7 +216,7 @@
         },
       ],
       image: "images/dmu_22.png",
-      source_code_link: "https://github.com/yshashi",
+      // source_code_link: "https://github.com/yshashi",
     },
     {
       name: "Scrum Poker",
@@ -237,7 +237,7 @@
         },
       ],
       image: "images/dmu_21.png",
-      source_code_link: "https://github.com/yshashi",
+      // source_code_link: "https://github.com/yshashi",
     },
   ];
   
