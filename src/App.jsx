@@ -3,20 +3,24 @@ import Navbar from './components/Navbar';  // Correct import
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
+import Tech from './components/Tech';
+import Contact from './components/Contact';
 
 const HomePage = () => {
   return (
-    <div className=''>
-      <div className=''>
+    <div className=' relative z-0 bg-gray-950'>
+      <div className=' bg-gray-950 bg-cover bg-no-repeat bg-center'>
         <Navbar/>
         <Hero/>
       </div>
-      <About />
-      {/* <Experience />
+      <About /> 
       <Tech />
-     
-      <Talks />
-      <Contact /> */} <Projects />
+      <Experience />
+      <Projects />
+     <Contact/>
+      <Footer/>
     </div>
   );
 };

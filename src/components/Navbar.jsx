@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='sm:px-16 px-6 w-full flex items-center py-10 fixed top-0 z-20 bg-black '>
+    <nav className='sm:px-16 px-6 w-full flex items-center py-10 fixed top-0 z-20 bg-slate-950'>
       <div className='  w-full flex justify-between items-center max-w-7xl '>
         <Link
           to='/'
@@ -48,7 +48,7 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
 
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-blue-950 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-gray-950 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((link) => (
                 <li
