@@ -73,16 +73,16 @@
       "company_name": "TradeEase Ethiopia",
       "icon": "https://en.wikipedia.org/wiki/Ethiopian_Federal_Police", 
       "iconBg": "#383E56",
-      "date": "March 2022 - Present",
+      "date": "March 2024 - Present",
       "points": [
-        "Designed and developed a robust Inventory Management System using ASP.NET Core and Angular, enabling efficient tracking of products, orders, and material allocations.",
-        "Implemented a scalable backend using ASP.NET Core Web API with Entity Framework and PostgreSQL for optimized data management.",
-        "Developed an intuitive frontend with Angular, incorporating Material UI for a seamless and user-friendly experience.",
-        "Integrated role-based access control (RBAC) to manage user permissions for inventory, order processing, and material allocations.",
-        "Enhanced system efficiency by implementing real-time stock updates and notifications for low inventory levels.",
-        "Led API development to support seamless interactions between the system and third-party services.",
-        "Applied Agile methodologies, including Scrum and Kanban, for structured development, sprint planning, and continuous delivery."
-      ]
+    "Developed a full-stack web application using **React**, **Next.js**, **Django**, and **ASP.NET Core** to enable seamless communication between frontend and backend.",
+    "Built a scalable backend with **Django** and **ASP.NET Core Web API**, integrating **PostgreSQL** for efficient data management.",
+    "Created an intuitive and responsive frontend using **React** and **Next.js**, providing a user-friendly experience with dynamic pages and SEO optimization.",
+    "Implemented **role-based access control (RBAC)** to manage user permissions and access across different sections of the application.",
+    "Optimized system performance by integrating real-time updates and ensuring efficient data flow across both frontend and backend.",
+    "Led the development of **RESTful APIs** to support third-party integrations and ensure smooth data exchange.",
+    
+  ]
     },
     
     {
@@ -90,23 +90,7 @@
       "company_name": "TradeEase Ethiopia",
       "icon": "https://en.wikipedia.org/wiki/Ethiopian_Federal_Police", 
       "iconBg": "#383E56",
-      "date": "March 2022 - Present",
-      "points": [
-        "Designed and developed a robust Inventory Management System using ASP.NET Core and Angular, enabling efficient tracking of products, orders, and material allocations.",
-        "Implemented a scalable backend using ASP.NET Core Web API with Entity Framework and PostgreSQL for optimized data management.",
-        "Developed an intuitive frontend with Angular, incorporating Material UI for a seamless and user-friendly experience.",
-        "Integrated role-based access control (RBAC) to manage user permissions for inventory, order processing, and material allocations.",
-        "Enhanced system efficiency by implementing real-time stock updates and notifications for low inventory levels.",
-        "Led API development to support seamless interactions between the system and third-party services.",
-        "Applied Agile methodologies, including Scrum and Kanban, for structured development, sprint planning, and continuous delivery."
-      ]
-    },
-    {
-      "title": "Software Engineer",
-      "company_name": "TradeEase Ethiopia",
-      "icon": "https://en.wikipedia.org/wiki/Ethiopian_Federal_Police", 
-      "iconBg": "#383E56",
-      "date": "March 2022 - Present",
+      "date": "January 2023 - October 2024",
       "points": [
         "Designed and developed a robust Inventory Management System using ASP.NET Core and Angular, enabling efficient tracking of products, orders, and material allocations.",
         "Implemented a scalable backend using ASP.NET Core Web API with Entity Framework and PostgreSQL for optimized data management.",
