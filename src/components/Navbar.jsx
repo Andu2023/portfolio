@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='sm:px-16 px-6 w-full flex items-center py-10 fixed top-0 z-20 bg-slate-950'>
+    <nav className='sm:px-16 px-6 w-full flex items-center py-10 fixed top-0 z-20 bg-gray-950'>
       <div className='  w-full flex justify-between items-center max-w-7xl '>
         <Link
           to='/'
@@ -20,12 +20,14 @@ const Navbar = () => {
           }}
         >
          <div className="group cursor-pointer">
-  <p className="text-white text-[18px] font-bold flex group-hover:hidden">
+         <p className="text-[#915eff] text-[24px] font-extrabold flex group hover:scale-110 hover:text-[#ff8a00] transition-all duration-300 ease-in-out">
+  <span className="text-4xl font-serif bg-gradient-to-r from-[#915eff] to-[#6a1b9a] text-transparent bg-clip-text">
     AnduA
-  </p>
-  <p className="text-white text-[18px] font-bold flex hidden group-hover:block">
+  </span>
+</p>
+  {/* <p className="text-white text-[18px] font-bold flex hidden group-hover:block">
     Andualem Assefa
-  </p>
+  </p> */}
 </div>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
