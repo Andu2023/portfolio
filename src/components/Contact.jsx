@@ -26,16 +26,16 @@ const Contact = () => {
     // Replace these with your EmailJS service details
     emailjs
       .send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_re9ll8a',
+        'template_ohxzwqd',
         {
           from_name: form.name,
           to_name: 'andualem',
           from_email: form.email,
-          to_email: 'your-email@example.com',
+          to_email: 'andy2023user@gmail.com',
           message: form.message,
         },
-         'YOUR_PUBLIC_KEY'
+        'TDcHEervFaq02RtIL'
       )
       .then(() => {
         setLoading(false);
@@ -102,7 +102,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-gray-900 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
+            className='bg-gray-900 cursor-pointer  py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
           >
             {loading ? 'Sending...' : 'Send'}
           </button>

@@ -13,7 +13,15 @@ const Hero = () => {
           building scalable, efficient, and user-friendly applications<br />
           using a range of technologies.
           </p>
-          <div className="  flex  items-center m-5   " ><span className=' rounded cursor-pointer text-white bg-[#915eff] h-10 w-40 p-2'>Download Resume</span></div>
+          <div className="flex items-center m-5">
+  <a 
+    href="/Andualem assefa_Resume.pdf" 
+    download="Andualem assefa_Resume.pdf" 
+    className="rounded-full cursor-pointer text-white bg-[#915eff] h-10 w-40 p-2 flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105"
+  >
+    Download Resume
+  </a>
+</div>
         </div>
       </div>
     </section>

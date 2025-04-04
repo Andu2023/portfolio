@@ -8,14 +8,14 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>My technical Skill.</h2>
+        <h2 className={styles.sectionHeadText}>Frameworks.</h2>
       </motion.div>
 
       <motion.div 
         variants={fadeIn("", "", 0.1, 1)}
         className='flex flex-row flex-wrap justify-center gap-10 mt-10'
       >
-        {technologies.map((technology, index) => (
+        {technologies.map((technology) => (
           <div className='w-28 h-28 flex flex-col items-center justify-center' key={technology.name}>
             <img 
               src={technology.icon} 

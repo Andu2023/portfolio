@@ -11,13 +11,13 @@ import Contact from './components/Contact';
 const HomePage = () => {
   return (
     <div className=' relative z-0 bg-gray-950'>
-      <div className=' bg-gray-950 bg-cover bg-no-repeat bg-center'>
+      <div className=' bg-gray-950 bg-cover bg-no-repeat bg-center '>
         <Navbar/>
         <Hero/>
       </div>
       <About /> 
-      <Tech />
       <Experience />
+      <Tech />
       <Projects />
      <Contact/>
       <Footer/>

@@ -19,8 +19,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            AnduA </p>
+         <div className="group cursor-pointer">
+  <p className="text-white text-[18px] font-bold flex group-hover:hidden">
+    AnduA
+  </p>
+  <p className="text-white text-[18px] font-bold flex hidden group-hover:block">
+    Andualem Assefa
+  </p>
+</div>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
@@ -28,7 +34,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title ? 'text-white' : 'text-secondary'
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-blue-300 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               {link.id === 'blog' ? (

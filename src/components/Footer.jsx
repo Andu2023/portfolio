@@ -2,6 +2,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[100px] flex justify-between items-center flex-wrap gap-5`}>
         <div>
           <p className='text-white font-bold text-[24px]'>Andualem Assefa</p>
-          <p className='mt-1 text-secondary'>Senior Full Stack Developer</p>
+          <p className='mt-1 text-gray-300'>Senior Full Stack Developer</p>
         </div>
         
         <div className='flex gap-5'>
@@ -22,7 +23,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className='transition-colors text-secondary hover:text-white'
           >
-            GitHub
+            <FaGithub size={24} />
           </a>
           <a
             href="https://www.linkedin.com/in/andualem-assefa/"
@@ -30,13 +31,13 @@ const Footer = () => {
             rel="noopener noreferrer"
             className='transition-colors text-secondary hover:text-white'
           >
-            LinkedIn
+            <FaLinkedin size={24} />
           </a>
           <a
             href="mailto:andy2023user@gmail.com"
             className='transition-colors text-secondary hover:text-white'
           >
-            Email
+            <FaEnvelope size={24} />
           </a>
         </div>
       </div>
