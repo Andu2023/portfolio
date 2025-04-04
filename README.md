@@ -1,12 +1,31 @@
-<<<<<<< HEAD
-# React + Vite
+# 🚀 My Portfolio Website  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A fully responsive **portfolio website** built with:  
+- 🌟 **React.jsx** – UI development  
+- 💫 **Framer Motion** – Smooth animations  
+- 🎨 **Tailwind CSS** – Stylish & responsive design  
+- 📩 **EmailJS** – Contact form functionality  
+- 🔄 **React Router** – Page navigation  
+- ⚡ **Vite** – Fast build tool  
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# portfolio
->>>>>>> e4fac0d20f0a22acf552327b0033d0bfdaf4b90a
+## 📦 Installation & Running Locally  
+
+1. **Clone the repository**  
+   ```sh
+   git clone https://github.com/Andu2023/portfolio.git
+   cd portfolio
+   npm install
+   npm run dev
+   --------
+   ✏️ Customization Guide
+1️⃣ Update Images
+Replace images in the /public/images/ folder with your own assets.
+Update the src paths in your components where images are used.
+2️⃣ Configure EmailJS
+To enable the contact form, follow these steps:
+
+Sign up at EmailJS.
+Create a new service and get your Service ID and Template ID.
+
