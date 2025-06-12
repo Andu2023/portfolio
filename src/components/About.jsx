@@ -1,49 +1,50 @@
 import { motion } from 'framer-motion';
-import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-
+import { FaStar } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>About Me</h2>
-      </motion.div>
-     <div className="mt-10 flex flex-wrap gap-20">
-     <motion.p
+    <div className="w-full flex justify-center items-center mt-10 px-4 md:px-20">
+      <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-2 text-white text-[17px] max-w-3xl leading-[30px]">
-        I am Software Engineer and  Senior Full Stack Developer with a strong foundation in .NET/C#, JavaScript, and Python ecosystems, specializing in TypeScript, React, and Angular. I hold a Bachelor degree in Software Engineering and have a proven track record of building scalable, high-performance web applications and implementing complex business logic.
+        className="bg-white p-10 rounded-2xl shadow-lg border border-gray-700 max-w-6xl w-full"
+      >
+        {/* Title */}
+        <motion.div
+          variants={textVariant()}
+          className="text-center flex flex-col items-center justify-center"
+        >
+          <h2 className="text-4xl font-bold text-gray-900">ABOUT ME.</h2>
 
-        With experience leading development teams, I bring expertise in databases like MongoDB, PostgreSQL, and SQL, as well as cloud platforms such as AWS and Azure. My skill set also includes Python for backend development, data processing, and automation. As a quick learner and proactive collaborator, I am dedicated to creating user-centric, efficient solutions that solve real-world challenges. Let work together to bring your ideas to life!
-      </motion.p>
+          {/* Decorative line with star */}
+          <div className="flex items-center gap-4 mt-4">
+            <div className="h-[2px] w-20 bg-gray-400 rounded-full"></div>
+            <FaStar className="text-yellow-500 text-xl" />
+            <div className="h-[2px] w-20 bg-gray-400 rounded-full"></div>
+          </div>
+        </motion.div>
 
-      {/* <img src={photo202} alt="Logo" className="h-50 w-50 rounded-full object-cover r sm:ml-20"/> */}
-     </div>
-{/*       
-     <div className="aboumkills flex flex-col gap-5 m-10 pl-0 md:pl-60">
-     
-  <div className="about-skill flex gap-12 items-center transition-all">
-    <p className="min-w-[150px] text-2xl font-medium">React</p>
-    <hr className="w-1/2 h-2 rounded-full bg-gradient-to-r from-[#26460f] to-[#FF0903] border-none outline-none" />
-  </div>
-  <div className="about-skill flex gap-12 items-center transition-all">
-    <p className="min-w-[150px] text-2xl font-medium">Angular</p>
-    <hr className="w-1/2 h-2 rounded-full bg-gradient-to-r from-[#26460f] to-[#FF0903] border-none outline-none" />
-  </div>
-  <div className="about-skill flex gap-12 items-center transition-all">
-    <p className="min-w-[150px] text-2xl font-medium">Asp.Net Web Api</p>
-    <hr className="w-1/2 h-2 rounded-full bg-gradient-to-r from-[#26460f] to-[#FF0903] border-none outline-none" />
-  </div>
-  <div className="about-skill flex gap-12 items-center transition-all">
-    <p className="min-w-[150px] text-2xl font-medium">Django</p>
-    <hr className="w-1/2 h-2 rounded-full bg-gradient-to-r from-[#26460f] to-[#FF0903] border-none outline-none" />
-  </div>
-</div> */}
+        {/* Paragraphs */}
+        <div className="t-10 flex flex-col sm:flex-row sm:gap-10 gap-6 sm:flex-wrap sm:justify-center px-4">
+          <motion.p
+            variants={fadeIn("", "", 0.2, 1)}
+            className="text-gray-800 text-[17px] leading-[30px] max-w-[500px] flex-1 font-serif"
+          >
+           
+           I am a passionate and results-driven Full Stack Developer with a strong foundation in both front-end and back-end technologies. I thrive on solving complex problems, building scalable applications, and transforming innovative ideas into impactful digital solutions. With a commitment to continuous learning and clean code practices, I strive to create efficient, user-friendly, and high-performance software that makes a differencein  in .NET Core, Django, Angular, React, and cloud technologies.
 
-      
-    </>
+          </motion.p>
+
+          <motion.p
+            variants={fadeIn("", "", 0.3, 1)}
+            className="text-gray-800 text-[17px] leading-[30px] max-w-[500px] flex-1 font-serif"
+          >
+           My portfolio highlights a diverse range of projects that reflect my ability to manage both front-end and back-end development effectively. Each project showcases my problem-solving skills, attention to detail, and commitment to delivering high-quality solutions. I'm always eager to learn new technologies and embrace new challenges that push me to grow as a developer.
+          </motion.p>
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

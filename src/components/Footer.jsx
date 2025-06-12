@@ -1,5 +1,3 @@
-import { styles } from '../styles';
-import { SectionWrapper } from '../hoc';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
@@ -8,48 +6,49 @@ const Footer = () => {
   return (
     <motion.footer
       variants={fadeIn("up", "spring", 0.5, 0.75)}
-      className='rounded-2xl bg-black-100'
+      className="w-full bg-sky-900 text-white"
     >
-      <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[100px] flex justify-between items-center flex-wrap gap-5`}>
-        <div>
-          <p className='text-white font-bold text-[24px]'>Andualem Assefa</p>
-          <p className='mt-1 text-gray-300'>Senior Full Stack Developer</p>
+      {/* Top Section */}
+      <div className="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row justify-between items-center gap-6 border-b border-sky-700">
+        {/* Developer Info */}
+        <div className="text-center sm:text-left space-y-1">
+          <p className="text-2xl font-semibold">Andualem Assefa</p>
+          <p className="text-sm text-gray-300">Senior Full Stack Developer</p>
         </div>
-        
-        <div className='flex gap-5'>
+
+        {/* Social Links */}
+        <div className="flex gap-6">
           <a
             href="https://github.com/Andu2023"
             target="_blank"
             rel="noopener noreferrer"
-            className='transition-colors text-secondary hover:text-white'
+            className="hover:scale-110 transform transition-all duration-300 text-gray-300 hover:text-white"
           >
-            <FaGithub size={24} />
+            <FaGithub size={26} />
           </a>
           <a
             href="https://www.linkedin.com/in/andualem-assefa/"
             target="_blank"
             rel="noopener noreferrer"
-            className='transition-colors text-secondary hover:text-white'
+            className="hover:scale-110 transform transition-all duration-300 text-gray-300 hover:text-white"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={26} />
           </a>
           <a
             href="mailto:andy2023user@gmail.com"
-            className='transition-colors text-secondary hover:text-white'
+            className="hover:scale-110 transform transition-all duration-300 text-gray-300 hover:text-white"
           >
-            <FaEnvelope size={24} />
+            <FaEnvelope size={26} />
           </a>
         </div>
       </div>
-      
-      <div className='flex justify-center items-center py-5 w-full'>
-        <p className='text-secondary text-[14px]'>
-          © {new Date().getFullYear()} Andualem Assefa. All rights reserved.
-          <hr />
-        </p>
+
+      {/* Bottom Section */}
+      <div className="text-center py-3 text-sm text-gray-400">
+        © {new Date().getFullYear()} <span className="text-white font-medium">Andualem Assefa</span>. All rights reserved.
       </div>
     </motion.footer>
   );
 };
 
-export default SectionWrapper(Footer, "footer");
+export default Footer;

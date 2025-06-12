@@ -6,7 +6,7 @@
     },
     {
       id: "experience",
-      title: "Experience",
+      title: "Resume",
     },
     {
       id: "projects",
@@ -66,21 +66,135 @@
       icon: "https://letsprogram.in/assets/images/icons/git.png",
     }
   ];
+  export const frameworks = [
+  {
+    name: "Angular",
+    icon: "https://letsprogram.in/assets/images/icons/angular.png",
+  },
+  {
+    name: "React JS",
+    icon: "https://letsprogram.in/assets/images/icons/react.png",
+  },
+  {
+    name: ".NET Core",
+    icon: "https://cdn.worldvectorlogo.com/logos/dotnet.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "https://letsprogram.in/assets/images/icons/tailwind.png",
+  },
   
+  {
+    name: "Django",
+    icon: "https://cdn.worldvectorlogo.com/logos/django-community.svg",
+  }
+];
+
+
+export const languages = [
+  {
+    name: "C#",
+    icon: "https://letsprogram.in/assets/images/icons/cc.png",
+  },
+   {
+    name: "Python",
+    icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
+  },
+  {
+    name: "TypeScript",
+    icon: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",
+  },
+  {
+    name: "C++",
+    icon: "https://cdn.worldvectorlogo.com/logos/c.svg",
+  },
+  {
+    name: "Java",
+    icon: "https://cdn.worldvectorlogo.com/logos/java-14.svg",
+  }
+];
+
+export const tools = [
+  {
+    name: "MongoDB",
+    icon: "https://letsprogram.in/assets/images/icons/mongodb.svg",
+  },
+  {
+    name: "Azure",
+    icon: "https://letsprogram.in/assets/images/icons/Azure.png",
+  },
+  {
+    name: "AWS",
+    icon: "https://letsprogram.in/assets/images/icons/aws.png",
+  },
+  {
+    name: "Git",
+    icon: "https://letsprogram.in/assets/images/icons/git.png",
+  },
+  {
+    name: "Web API",
+    icon: "https://cdn.worldvectorlogo.com/logos/asp-net-core-1.svg",
+  },
+  {
+    name: "Entity Framework",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Entity_Framework_Logo.svg/512px-Entity_Framework_Logo.svg.png",
+  },
+  {
+    name: "SQL Server",
+    icon: "https://cdn.worldvectorlogo.com/logos/microsoft-sql-server-1.svg",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://cdn.worldvectorlogo.com/logos/postgresql.svg",
+  },
+  {
+    name: "HTML",
+    icon: "https://cdn.worldvectorlogo.com/logos/html-1.svg",
+  },
+  {
+    name: "CSS",
+    icon: "https://cdn.worldvectorlogo.com/logos/css-3.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "https://letsprogram.in/assets/images/icons/tailwind.png",
+  },
+  {
+    name: "Bootstrap",
+    icon: "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg",
+  },
+  {
+    name: "Azure DevOps",
+    icon: "https://cdn.worldvectorlogo.com/logos/azure-devops.svg",
+  },
+  {
+    name: "Agile Methodology",
+    icon: "https://cdn.worldvectorlogo.com/logos/agile.svg",
+  },
+  {
+    name: "Docker",
+    icon: "https://cdn.worldvectorlogo.com/logos/docker.svg",
+  }
+];
+
   export const experiences = [
     {
       "title": "Software Engineer",
-      "company_name": "TradeEase Ethiopia",
-      "icon": "https://en.wikipedia.org/wiki/Ethiopian_Federal_Police", 
+      "company_name": "EthixDev",
+      "icon": "", 
       "iconBg": "#383E56",
       "date": "March 2024 - Present",
       "points": [
-    "Developed a full-stack web application using **React**, **Next.js**, **Django**, and **ASP.NET Core** to enable seamless communication between frontend and backend.",
-    "Built a scalable backend with **Django** and **ASP.NET Core Web API**, integrating **PostgreSQL** for efficient data management.",
-    "Created an intuitive and responsive frontend using **React** and **Next.js**, providing a user-friendly experience with dynamic pages and SEO optimization.",
-    "Implemented **role-based access control (RBAC)** to manage user permissions and access across different sections of the application.",
-    "Optimized system performance by integrating real-time updates and ensuring efficient data flow across both frontend and backend.",
-    "Led the development of **RESTful APIs** to support third-party integrations and ensure smooth data exchange.",
+    "Contributed to multiple full-stack projects using Django, React, and Django Templates, delivering robust and maintainable web applications.",
+    "Utilized Django REST Framework to build secure, scalable, and well-documented APIs for backend services.",
+    "Designed and implemented responsive frontends with React, ensuring intuitive UX and performance across devices.",
+    "Developed data-driven applications and explored machine learning integrations to enhance system intelligence and automation.",
+    "Collaborated closely with cross-functional teams to translate requirements into functional, efficient, and scalable code.",
+    "Applied best practices in version control, testing, and deployment to ensure smooth development workflows and system reliability."
     
   ]
     },
@@ -172,5 +286,20 @@
       // source_code_link: "",
     },
     
+    
+    
   ];
+  export const education = [
+  {
+    year: "2018 – 2023",
+    university: "Debre Markos University",
+    field: "BSc in Software Engineering",
+  },
+  {
+    year: "2021 – 2022",
+    university: "Ethics Technology",
+    field: "Full stack development ",
+  },
+  // Add more if needed
+];
   

@@ -10,15 +10,15 @@ import Contact from './components/Contact';
 
 const HomePage = () => {
   return (
-    <div className=' relative z-0 bg-gray-950'>
-      <div className=' bg-gray-950 bg-cover bg-no-repeat bg-center '>
+    <div className=' relative z-0 bg-gray-100'>
+      <div className=' bg-cover bg-no-repeat bg-center '>
         <Navbar/>
         <Hero/>
       </div>
-      <About /> 
+       <Projects />
       <Experience />
       <Tech />
-      <Projects />
+      <About /> 
      <Contact/>
       <Footer/>
     </div>
@@ -36,5 +36,4 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;
