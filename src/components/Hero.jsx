@@ -1,5 +1,5 @@
 import { styles } from '../styles';
-import { FaFacebookF, FaInstagram, FaGithub, FaLinkedin, FaStar } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -50,13 +50,6 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        {/* Social Icons - Optional */}
-        {/* <div className="mt-6 flex gap-5">
-          <FaFacebookF className="text-gray-700 hover:text-sky-800 text-xl cursor-pointer" />
-          <FaInstagram className="text-gray-700 hover:text-pink-600 text-xl cursor-pointer" />
-          <FaGithub className="text-gray-700 hover:text-black text-xl cursor-pointer" />
-          <FaLinkedin className="text-gray-700 hover:text-sky-700 text-xl cursor-pointer" />
-        </div> */}
       </div>
     </section>
   );
