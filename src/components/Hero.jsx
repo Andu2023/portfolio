@@ -42,7 +42,7 @@ const Hero = () => {
           className="mt-6"
         >
           <a
-            href="/Andualem assefa_Resume.pdf"
+            href="/AndualemAssefaResume.pdf"
             download="Andualem assefa_Resume.pdf"
             className="rounded-full text-white bg-sky-900 hover:bg-sky-800 px-6 py-3 font-semibold transition-all duration-300 ease-in-out hover:scale-105 shadow-md"
           >

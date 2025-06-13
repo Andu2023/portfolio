@@ -49,7 +49,7 @@ const Experience = () => {
        <div className="w-full max-w-6xl flex justify-between items-center mb-6 px-4">
         <h2 className="text-xl font-bold text-gray-800">Resume</h2>
         <a
-          href="/Andualem assefa_Resume.pdf"
+          href="/AndualemAssefaResume.pdf"
           download="Andualem assefa_Resume.pdf"
           className="bg-sky-900 text-white text-sm font-medium px-6 py-2 rounded-full shadow-md hover:bg-sky-800 transition-all duration-300"
         >
