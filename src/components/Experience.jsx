@@ -46,7 +46,7 @@ const Experience = () => {
   return (
     <div className="w-full flex flex-col items-center mt-6 px-4 md:px-20">
       
-       <div className="w-full max-w-6xl flex justify-between items-center mb-6 px-4">
+       <div className="w-full max-w-6xl flex justify-between items-center mb-6 px-4 max-sm:gap-5 ">
         <h2 className="text-xl font-bold text-gray-800 font-sans">Resume</h2>
        
 
@@ -59,7 +59,7 @@ const Experience = () => {
   <a
     href="/AndualemAssefaResume.pdf"
     download="Andualem_Assefa_Resume.pdf"
-    className="flex items-center sm:max-w-fit  px-4 sm:px-6 py-2 sm:py-3 gap-2 rounded-full text-sky-900 bg-white hover:bg-gray-100  font-semibold transition-all duration-300 ease-in-out hover:scale-105 shadow-md border border-sky-900"
+    className="flex items-center sm:max-w-fit  px-4 sm:px-6 py-2 sm:py-3 gap-2 rounded-full text-sky-900 bg-white hover:bg-gray-100  font-semibold transition-all duration-300 ease-in-out hover:scale-105 shadow-md border border-sky-900 "
   >
     
     Download Resume <HiDownload size={20} />
@@ -84,7 +84,7 @@ const Experience = () => {
 
         {/* Education Section */}
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-left">Education</h2>
-        <div className="flex  justify-center gap-10">
+        <div className="flex  justify-center gap-10 max-sm:gap-5">
           {education.map((edu, index) => (
             <EducationCard key={index} index={index} edu={edu} />
           ))}
