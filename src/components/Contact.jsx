@@ -106,7 +106,7 @@ const Contact = () => {
 
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
             <label className="flex flex-col">
-              <span className="text-gray-700 font-medium mb-2">Your Name</span>
+              <span className="text-black font-medium mb-2">Your Name</span>
               <input
                 type="text"
                 name="name"
@@ -119,7 +119,7 @@ const Contact = () => {
             </label>
 
             <label className="flex flex-col">
-              <span className="text-gray-700 font-medium mb-2">Your Email</span>
+              <span className="text-black font-medium mb-2">Your Email</span>
               <input
                 type="email"
                 name="email"
@@ -132,7 +132,7 @@ const Contact = () => {
             </label>
 
             <label className="flex flex-col">
-              <span className="text-gray-700 font-medium mb-2">Your Message</span>
+              <span className="text-black font-medium mb-2">Your Message</span>
               <textarea
                 rows="5"
                 name="message"
