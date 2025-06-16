@@ -6,6 +6,7 @@ import { FaLinkedinIn, FaPhone, FaStar } from 'react-icons/fa';
 import { slideIn } from '../utils/motion';
 import {  FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
+import { FiSend } from 'react-icons/fi';
 
 const Contact = () => {
   const formRef = useRef();
@@ -100,13 +101,13 @@ const Contact = () => {
         {/* Contact Form */}
         <motion.div
           variants={slideIn('left', 'tween', 0.2, 1)}
-          className="bg-white shadow-lg rounded-2xl p-8 flex-1"
+          className="bg-white shadow-lg rounded-2xl p-8 flex-1 text-black"
         >
-        <h4 className="text-xl font-semibold text-gray-800 text-center mb-4">Message</h4>
+        <h4 className="text-xl font-semibold text-gray-800 text-center mb-4"> Send  &nbsp;&nbsp; Message</h4>
 
           <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
             <label className="flex flex-col">
-              <span className="text-black font-medium mb-2">Your Name</span>
+              <span className="text-gray-700 font-medium mb-2">Your Name</span>
               <input
                 type="text"
                 name="name"
@@ -119,7 +120,7 @@ const Contact = () => {
             </label>
 
             <label className="flex flex-col">
-              <span className="text-black font-medium mb-2">Your Email</span>
+              <span className="text-gray-700 font-medium mb-2">Your Email</span>
               <input
                 type="email"
                 name="email"
@@ -132,7 +133,7 @@ const Contact = () => {
             </label>
 
             <label className="flex flex-col">
-              <span className="text-black font-medium mb-2">Your Message</span>
+              <span className="text-gray-700z font-medium mb-2">Your Message</span>
               <textarea
                 rows="5"
                 name="message"
@@ -146,9 +147,12 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+              className="bg-sky-900 text-white font-semibold py-3 px-6 rounded-lg hover:bg-sky-700 transition duration-300 flex items-center gap-2 justify-center"
             >
-              {loading ? 'Sending...' : 'Send'}
+              {loading ? 'Sending...' : 'Send  Message '}
+                <>
+              <FiSend size={18} />
+              </>
             </button>
           </form>
         </motion.div>

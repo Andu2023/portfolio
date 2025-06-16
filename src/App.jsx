@@ -13,12 +13,12 @@ const HomePage = () => {
     <div className=' relative z-0 bg-gray-100'>
       <div className=' bg-cover bg-no-repeat bg-center '>
         <Navbar/>
-        <Hero/>
       </div>
+       <Hero/>
+       <About /> 
+       <Tech />
+       <Experience />
        <Projects />
-      <Experience />
-      <Tech />
-      <About /> 
      <Contact/>
       <Footer/>
     </div>

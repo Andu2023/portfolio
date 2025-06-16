@@ -1,55 +1,99 @@
 import { styles } from '../styles';
 import { FaStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-
+import profile from '../assets/profile.jpg'; 
+import { HiDownload } from 'react-icons/hi';
+import { useState, useEffect } from 'react';
 const Hero = () => {
+   // Rotating text logic
+  const rotatingTexts = [
+    "Fullstack Developer",
+    "React and Angular",
+    ".NET Core and Django",
+  ];
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % rotatingTexts.length);
+    }, 2500); // change text every 2.5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
   return (
-    <section className="relative w-full h-screen bg-gray-100 flex items-center justify-center">
-      <div className={`${styles.paddingX} max-w-7xl mx-auto flex flex-col items-center text-center pt-32`}>
+    <section className="relative w-full h-auto min-h-screen bg-gray-100 flex items-center justify-center" id="hero">
+      <div className={`${styles.paddingX} max-w-7xl mx-auto pt-28 flex flex-col md:flex-row items-center justify-between gap-10`}>
         
-        {/* Heading with Star Decoration */}
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col items-center justify-center"
-        >
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Hi, I'm Andualem Assefa</h2>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="h-[2px] w-20 bg-gray-400 rounded-full"></div>
-            <FaStar className="text-yellow-500 text-xl" />
-            <div className="h-[2px] w-20 bg-gray-400 rounded-full"></div>
-          </div>
-        </motion.div>
+        {/* Text Section (Left) */}
+        <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+              Hi, I'm Andualem Assefa
+            </h2>
+            <div className="flex items-center justify-center md:justify-start gap-4 mb-4">
+              <div className="h-[2px] w-16 sm:w-20 bg-gray-400 rounded-full"></div>
+              <FaStar className="text-yellow-500 text-lg sm:text-xl" />
+              <div className="h-[2px] w-16 sm:w-20 bg-gray-400 rounded-full"></div>
+            </div>
+          </motion.div>
 
-        {/* Subtext */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.8 }}
-          className="mt-2 space-y-2 text-gray-700 text-lg sm:text-xl leading-relaxed"
-        >
-          <p className="tracking-wide">Full Stack Software Developer Building efficient and user-friendly </p>
-          <p className="tracking-wide"> Applications Using a range of modern technologies</p>
-          
-        </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="mt-2 space-y-2 text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed"
+          >
+              <motion.p
+                key={rotatingTexts[currentTextIndex]}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="tracking-wide text-emerald-700 font-semibold text-lg sm:text-xl"
+               >
+              {rotatingTexts[currentTextIndex]}
+              </motion.p>
+            <p className="tracking-wide">
+              Full Stack Software Developer building efficient and user-friendly
+            </p>
+            <p className="tracking-wide">
+              applications using a range of modern technologies.
+            </p>
+          </motion.div>
+             <motion.div
+               initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
+                 className="mt-6"
+>
+                    <a
+                      href="/AndualemAssefaResume.pdf"
+                      download="Andualem_Assefa_Resume.pdf"
+                      className="flex items-center gap-2 rounded-full text-sky-900 bg-white hover:bg-gray-100 px-6 py-3 font-semibold transition-all duration-300 ease-in-out hover:scale-105 shadow-md border border-sky-900"
+                    >
+                     Download Resume<HiDownload size={20} />
+                    </a>
+                </motion.div>
 
-        {/* Resume Button */}
+                 
+                </div>
+
+        {/* Image Section (Right) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.6, duration: 0.6 }}
-          className="mt-6"
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="flex-1 flex justify-center items-center"
         >
-          <a
-            href="/AndualemAssefaResume.pdf"
-            download="Andualem assefa_Resume.pdf"
-            className="rounded-full text-white bg-sky-900 hover:bg-sky-800 px-6 py-3 font-semibold transition-all duration-300 ease-in-out hover:scale-105 shadow-md"
-          >
-            Download Resume
-          </a>
+          <img
+            src={profile}
+            alt="Andualem Assefa"
+            className="w-40 h-40 sm:w-56 sm:h-56 md:w-[300px] md:h-[300px] object-cover rounded-full shadow-xl border-4 border-sky-900"
+          />
         </motion.div>
-
       </div>
     </section>
   );

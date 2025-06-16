@@ -29,10 +29,10 @@ const About = () => {
         <div className="t-10 flex flex-col sm:flex-row sm:gap-10 gap-6 sm:flex-wrap sm:justify-center px-4">
           <motion.p
             variants={fadeIn("", "", 0.2, 1)}
-            className="text-gray-800 text-[17px] leading-[30px] max-w-[500px] flex-1 font-serif"
+            className="text-gray-800 text-[17px] leading-[30px] max-w-[500px] flex-1 font-sans"
           >
            
-           I am a passionate and results-driven Full Stack Developer with a strong foundation in both front-end and back-end technologies. I thrive on solving complex problems, building scalable applications, and transforming innovative ideas into impactful digital solutions. With a commitment to continuous learning and clean code practices, I strive to create efficient, user-friendly, and high-performance software that makes a differencein  in .NET Core, Django, Angular, React, and cloud technologies.
+           I am a passionate and results-driven Full Stack Developer with a strong foundation in both front-end and back-end technologies. I thrive on solving complex problems, building scalable applications, and transforming innovative ideas into impactful digital solutions. With a commitment to continuous learning and clean code practices, I strive to create efficient, user-friendly, and high-performance software that makes a differencein  in <span className='text-purple-900'>.NET Core</span>, <span className='text-green-900'>Django</span>, <span className='text-pink-700'>Angular</span>, <span className='text-blue-500'>React</span>, and cloud technologies.
 
           </motion.p>
 

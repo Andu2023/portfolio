@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {  useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
 import { FiMenu, FiX } from 'react-icons/fi';
@@ -6,9 +6,26 @@ import { FiMenu, FiX } from 'react-icons/fi';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      for (let i = 0; i < navLinks.length; i++) {
+        const section = document.getElementById(navLinks[i].id);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            setActive(navLinks[i].title);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [])
 
   return (
-    <nav className="sm:px-16 px-6 w-full flex items-center py-10 fixed top-0 z-20 bg-gray-100 shadow-md">
+    <nav className="sm:px-16 px-6 w-full flex items-center py-8 fixed top-0 z-20 bg-gray-100 shadow-md">
       <div className="w-full flex justify-between items-center max-w-7xl">
         <Link
           to="/"
@@ -34,8 +51,10 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? 'text-gray-900' : 'text-gray-700'
-              } hover:text-emerald-700 text-[18px] font-medium cursor-pointer`}
+                active === link.title 
+                 ? 'text-emerald-500  '
+                  : 'text-gray-700'
+              } hover:bg-emerald-100 hover:text-emerald-700 text-[18px] font-medium cursor-pointer transition duration-200`}
               onClick={() => setActive(link.title)}
             >
               {link.id === 'blog' ? (
@@ -66,7 +85,9 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? 'text-gray-900' : 'text-gray-700'
+                    active === link.title 
+                    ? 'text-emerald-500'
+                      : 'text-gray-700'
                   } font-medium cursor-pointer text-[16px] hover:text-emerald-700`}
                   onClick={() => {
                     setToggle(!toggle);

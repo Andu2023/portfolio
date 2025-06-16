@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { experiences, education } from "../constants"; 
 import { SectionWrapper } from "../hoc";
 import { fadeIn } from "../utils/motion";
+ import { HiDownload } from 'react-icons/hi'; 
 
 const ExperienceCard = ({ experience, index }) => (
 
@@ -13,12 +14,12 @@ const ExperienceCard = ({ experience, index }) => (
     className="w-80 md:w-96 bg-white text-gray-800 p-6 rounded-xl shadow-md border border-gray-200 flex flex-col items-start justify-between transition-transform"
   >
     <div>
-      <h3 className="text-lg font-semibold">{experience.title}</h3>
+      <h3 className="text-lg font-semibold text-sky-950">{experience.title}</h3>
       <p className="text-sm text-gray-500 mb-3">{experience.date}</p>
     </div>
     <ul className="list-disc list-inside space-y-2 text-sm">
       {experience.points.map((point, i) => (
-        <li key={i} className="text-gray-700">
+        <li key={i} className="text-gray-700  font-serif">
           {point}
         </li>
       ))}
@@ -47,14 +48,25 @@ const Experience = () => {
     <div className="w-full flex flex-col items-center mt-10 px-4 md:px-20">
       
        <div className="w-full max-w-6xl flex justify-between items-center mb-6 px-4">
-        <h2 className="text-xl font-bold text-gray-800">Resume</h2>
-        <a
-          href="/AndualemAssefaResume.pdf"
-          download="Andualem assefa_Resume.pdf"
-          className="bg-sky-900 text-white text-sm font-medium px-6 py-2 rounded-full shadow-md hover:bg-sky-800 transition-all duration-300"
-        >
-          Download Resume
-        </a>
+        <h2 className="text-xl font-bold text-gray-800 font-sans">Resume</h2>
+       
+
+<motion.div
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ delay: 0.6, duration: 0.6 }}
+  className="mt-6"
+>
+  <a
+    href="/AndualemAssefaResume.pdf"
+    download="Andualem_Assefa_Resume.pdf"
+    className="flex items-center gap-2 rounded-full text-sky-900 bg-white hover:bg-gray-100 px-6 py-3 font-semibold transition-all duration-300 ease-in-out hover:scale-105 shadow-md border border-sky-900"
+  >
+    
+    Download Resume <HiDownload size={20} />
+  </a>
+</motion.div>
+
       </div>
       
       {/* Card Container */}
