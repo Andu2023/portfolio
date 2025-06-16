@@ -42,7 +42,7 @@ const TechSection = ({ title, items }) => (
 
 const Tech = () => {
   return (
-    <div className="w-full flex justify-center items-center mt-10 px-4 md:px-20">
+    <div className="w-full flex justify-center items-center mt-6 px-4 pt-6 md:px-20 pb-4">
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
         className="bg-white rounded-2xl shadow-lg p-8 max-w-6xl w-full"

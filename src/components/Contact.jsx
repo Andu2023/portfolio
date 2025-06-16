@@ -82,7 +82,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-12 max-w-7xl mx-auto px-4 md:px-20 ">
+    <div className="xl:mt-6 max-w-7xl mx-auto px-4 md:px-20 ">
        <motion.div
                
                 className="text-center flex flex-col items-center justify-center"

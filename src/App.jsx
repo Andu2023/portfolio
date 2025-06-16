@@ -19,7 +19,7 @@ const HomePage = () => {
        <Tech />
        <Experience />
        <Projects />
-     <Contact/>
+       <Contact/>
       <Footer/>
     </div>
   );

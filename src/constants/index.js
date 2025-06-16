@@ -301,7 +301,7 @@ export const tools = [
   },
   {
     year: "2021 – 2022",
-    university: "Ethics Technology",
+    university: "EthixDev Technology",
     field: "Full stack development ",
   },
   // Add more if needed
