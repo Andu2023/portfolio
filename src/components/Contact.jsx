@@ -165,7 +165,7 @@ const Contact = () => {
           <h4 className="text-xl font-semibold text-gray-800">Get in Touch</h4>
           <div className="flex items-center gap-3 text-gray-700">
             <FaLinkedinIn className="text-blue-500 text-xl" />
-            <a href="www.linkedin.com/in/andualem-assefa" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/andualem-assefa/" target="_blank" rel="noopener noreferrer">
               andualem-assefa
             </a>
           </div>
