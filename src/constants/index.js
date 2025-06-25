@@ -224,16 +224,16 @@ export const tools = [
   
   export const projects = [
     {
-      name: " Employee Management System",
+      name: " E-Homes ",
       description:
-        "An Employee Management System helps organizations efficiently handle employee records, including personal details, job roles, salaries, attendance, and performance. It streamlines HR processes like hiring, payroll, leave management, and employee evaluations.",
+        "The E-Homes project is a digital platform that serves as a bridge between real estate companies and potential buyers or renters. It enables real estate companies to promote their properties—such as homes, apartments, and commercial spaces—through detailed listings with images, prices, and locations. Users can easily browse, compare, and inquire about properties. E-Homes simplifies property marketing and enhances communication, making the buying or renting process more efficient and transparent.",
       tags: [
         {
-          name: "angular",
+          name: "react",
           color: "pink-text-gradient",
         },
         {
-          name: "nodejs",
+          name: "django",
           color: "green-text-gradient",
         },
         {
@@ -242,20 +242,20 @@ export const tools = [
         },
       ],
       //sample image
-      image: "images/dmu_21.png",
+      image: "images/e-homes.png",
       // source_code_link: "",
     },
     {
       name: "Inventory Management System",
       description:
-        "An Inventory Management System tracks and controls stock levels, purchases, and sales. It ensures efficient inventory handling, preventing overstocking or stock shortages. Features often include real-time tracking, automated restocking, and integration with sales and supply chain systems.",
+        "The Material Management System project aims to automate material demand and supply processes while providing a secure and user-friendly environment .An Inventory Management System tracks and controls stock levels, purchases, and sales. It ensures efficient inventory handling, preventing overstocking or stock shortages. Features often include real-time tracking, automated restocking, and integration with sales and supply chain systems.",
       tags: [
         {
           name: "angular",
           color: "pink-text-gradient",
         },
         {
-          name: "python",
+          name: ".Net core",
           color: "green-text-gradient",
         },
         {
@@ -264,7 +264,7 @@ export const tools = [
         },
       ],
       //sample image
-      image: "images/dmu_21.png",
+      image: "images/dmu_22.png",
       // source_code_link: "",
     },
     {
@@ -277,7 +277,7 @@ export const tools = [
           color: "blue-text-gradient",
         },
         {
-          name: "nodejs",
+          name: "django",
           color: "green-text-gradient",
         },
         {
@@ -286,7 +286,7 @@ export const tools = [
         },
       ],
       //sample image
-      image: "images/dmu_22.png",
+      image: "images/dmu_2.png",
       // source_code_link: "",
     },
     
