@@ -264,7 +264,7 @@ export const tools = [
         },
       ],
       //sample image
-      image: "images/dmu_22.png",
+      image: "images/ERP.png",
       // source_code_link: "",
     },
     {
@@ -290,7 +290,28 @@ export const tools = [
       // source_code_link: "",
     },
     
-    
+        {
+      name: " E-Commerce System",
+      description:
+        "An E-Commerce System is an online platform that allows businesses to sell products or services. It includes features like product listings, shopping carts, secure payments, order management, and customer accounts",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "django",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      //sample image
+      image: "images/dmu_2.png",
+      // source_code_link: "",
+    },
     
   ];
   export const education = [
