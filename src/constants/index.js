@@ -224,9 +224,9 @@ export const tools = [
   
   export const projects = [
     {
-      name: " E-Homes ",
+      name: " Real state ",
       description:
-        "The E-Homes project is a digital platform that serves as a bridge between real estate companies and potential buyers or renters. It enables real estate companies to promote their properties—such as homes, apartments, and commercial spaces—through detailed listings with images, prices, and locations. Users can easily browse, compare, and inquire about properties. E-Homes simplifies property marketing and enhances communication, making the buying or renting process more efficient and transparent.",
+        "The Real state project is a digital platform that serves as a bridge between real estate companies and potential buyers or renters. It enables real estate companies to promote their properties—such as homes, apartments, and commercial spaces—through detailed listings with images, prices, and locations. Users can easily browse, compare, and inquire about properties. RealSyate simplifies property marketing and enhances communication, making the buying or renting process more efficient and transparent.",
       tags: [
         {
           name: "react",
@@ -242,7 +242,7 @@ export const tools = [
         },
       ],
       //sample image
-      image: "images/e-homes.png",
+      image: "images/realstate.png",
       // source_code_link: "",
     },
     {

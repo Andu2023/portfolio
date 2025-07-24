@@ -31,7 +31,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-contain rounded-lg"
           />
         </div>
 
@@ -47,26 +47,29 @@ const ProjectCard = ({
       </motion.div>
 
       {/* Zoom Modal */}
-      <AnimatePresence>
-        {isZoomed && (
-          <motion.div
-            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 cursor-zoom-out"
-            onClick={() => setIsZoomed(false)}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.img
-              src={image}
-              alt={name}
-              initial={{ scale: 0.5 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.5 }}
-              className="max-w-[90%] max-h-[90vh] rounded-xl shadow-2xl"
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
+     <AnimatePresence>
+  {isZoomed && (
+    <motion.div
+      className="fixed inset-0 bg-gray-50 bg-opacity-80 z-50 overflow-auto cursor-zoom-out"
+      onClick={() => setIsZoomed(false)}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div className="min-h-screen flex items-center justify-center p-4">
+        <motion.img
+          src={image}
+          alt={name}
+          initial={{ scale: 0.5 }}
+          animate={{ scale: 1 }}
+          exit={{ scale: 0.5 }}
+          className="max-w-full max-h-[70vh] rounded-xl shadow-2xl object-contain"
+        />
+      </div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </>
   );
 };
