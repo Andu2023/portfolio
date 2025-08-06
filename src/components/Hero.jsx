@@ -39,7 +39,7 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-auto min-h-screen bg-gray-100 flex items-center justify-center" id="hero">
-      <div className={`${styles.paddingX} max-w-7xl mx-auto pt-28 flex flex-col md:flex-row items-center justify-between gap-10`}>
+      <div className={` max-w-7xl mx-auto pt-28 flex flex-col md:flex-row items-center justify-between gap-10`}>
         
         {/* Text Section */}
         <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
@@ -102,7 +102,7 @@ const Hero = () => {
           <img
             src={profile}
             alt="Andualem Assefa"
-            className="w-40 h-40 sm:w-56 sm:h-56 md:w-[300px] md:h-[300px] object-cover rounded-full shadow-xl border-4 border-sky-900"
+            className="w-52 h-52 sm:w-56 sm:h-56 md:w-[300px] md:h-[300px] object-cover rounded-full shadow-xl border-4 border-sky-900 "
           />
         </motion.div>
       </div>

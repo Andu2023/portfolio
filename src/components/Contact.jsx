@@ -99,8 +99,8 @@ const Contact = () => {
 
       <div className="mt-10 flex flex-col lg:flex-row gap-10">
         {/* Contact Form */}
-        <motion.div
-          variants={slideIn('left', 'tween', 0.2, 1)}
+        <div
+          
           className="bg-white shadow-lg rounded-2xl p-8 flex-1 text-black"
         >
         <h4 className="text-xl font-semibold text-gray-800 text-center mb-4"> Send  &nbsp;&nbsp; Message</h4>
@@ -155,11 +155,11 @@ const Contact = () => {
               </>
             </button>
           </form>
-        </motion.div>
+        </div>
 
         {/* Info Card */}
-        <motion.div
-          variants={slideIn('right', 'tween', 0.3, 1)}
+        <div
+  
           className="bg-white shadow-lg rounded-2xl p-8 flex-1 flex flex-col gap-5"
         >
           <h4 className="text-xl font-semibold text-gray-800">Get in Touch</h4>
@@ -189,7 +189,7 @@ const Contact = () => {
              +251938698149
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

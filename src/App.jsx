@@ -10,20 +10,28 @@ import Contact from './components/Contact';
 
 const HomePage = () => {
   return (
-    <div className=' relative z-0 bg-gray-100'>
-      <div className=' bg-cover bg-no-repeat bg-center '>
-        <Navbar/>
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      {/* Navbar section with no scroll background glitch */}
+      <div className="bg-gray-100">
+        <Navbar />
       </div>
-       <Hero/>
-       <About /> 
-       <Tech />
-       <Experience />
-       <Projects />
-       <Contact/>
-      <Footer/>
+
+      {/* Main content */}
+      <div className="flex-grow">
+        <Hero />
+        <About />
+        <Tech />
+        <Experience />
+        <Projects />
+        <Contact />
+      </div>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
+
 
 const App = () => {
   return (

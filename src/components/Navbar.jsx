@@ -29,20 +29,18 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 pl-8 sm:pl-52"
           onClick={() => {
             setActive('');
             window.scrollTo(0, 0);
           }}
         >
           <div className="group cursor-pointer inline-block">
-            <p className="relative text-[24px] font-extrabold text-gray-900 transition-all duration-300 ease-in-out group-hover:scale-110">
-              <span className="text-sky-950 font-serif tracking-wider group-hover:text-emerald-500">Andu</span>
-              <span className="absolute left-1/2 -bottom-3 transform -translate-x-1/2 text-sm text-gray-500 group-hover:text-emerald-500 transition-all duration-300 ease-in-out">
-                alem
-              </span>
-            </p>
-          </div>
+  <p className="relative text-[30px] sm:text-[48px] font-extrabold bg-gradient-to-r from-sky-600 to-emerald-500 text-transparent bg-clip-text drop-shadow-md transition-all duration-300 ease-in-out group-hover:scale-110">
+    <span className="tracking-wider font-serif">A</span>
+  </p>
+</div>
+
         </Link>
 
         {/* Desktop Nav */}
@@ -52,9 +50,9 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title 
-                 ? 'text-emerald-500  '
+                 ? 'text-emerald-900 underline  '
                   : 'text-gray-700'
-              } hover:bg-emerald-100 hover:text-emerald-700 text-[18px] font-medium cursor-pointer transition duration-200`}
+              } hover:bg-emerald-100  text-[18px] font-medium cursor-pointer transition duration-200`}
               onClick={() => setActive(link.title)}
             >
               {link.id === 'blog' ? (
